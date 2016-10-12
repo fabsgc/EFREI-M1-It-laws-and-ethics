@@ -105,12 +105,12 @@ class Engine{
 		if($matched = $router->get(preg_replace('`\?'.preg_quote($_SERVER['QUERY_STRING']).'`isU', '', $_SERVER['REQUEST_URI']))){
 			$_GET = array_merge($_GET, $matched->vars);
 
-			$request->name       =       $matched->name;
-			$request->page = $matched->page;
-			$request->action     =     $matched->action;
-			$request->logged     =     $matched->logged;
-			$request->access     =     $matched->access;
-			$request->method     =     $matched->method;
+			$request->name   = $matched->name;
+			$request->page   = $matched->page;
+			$request->action = $matched->action;
+			$request->logged = $matched->logged;
+			$request->access = $matched->access;
+			$request->method = $matched->method;
 
 			$this->route = true;
 		}
