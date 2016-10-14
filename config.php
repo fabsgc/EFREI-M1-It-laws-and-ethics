@@ -6,7 +6,7 @@
  * @description : Configuration of the application
  */
 
-define('FOLDER', 'EFREI-M1-It-laws-and-ethics/');
+define('FOLDER', '');
 
 return [
 	'database' => [
@@ -14,7 +14,7 @@ return [
 		'username' => 'root',
 		'password' => '',
 		'database' => 'it-laws-and-ethics',
-		'enabled' => true
+		'enabled' => false
 	],
 
 	'routes' => [
@@ -26,9 +26,17 @@ return [
 			'logged' => '*',
 			'access' => '*'
 		],
-		'index-cgv' => [
-			'url' => '/terms(/*)',
-			'action' => 'index.cgv',
+		'index-contact' => [
+			'url' => '/contact(/*)',
+			'action' => 'index.contact',
+			'vars' => [],
+			'method' => 'get',
+			'logged' => '*',
+			'access' => '*'
+		],
+		'index-policy' => [
+			'url' => '/policy(/*)',
+			'action' => 'index.policy',
 			'vars' => [],
 			'method' => 'get',
 			'logged' => '*',

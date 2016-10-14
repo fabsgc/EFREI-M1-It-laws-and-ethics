@@ -5,14 +5,33 @@ use \Core\View;
 
 class Payment extends Page{
 	public function home(){
-		return (new View('index/home.php'))->render();
+		$data = $this->getData();
+
+		return (new View('index/home.php'))
+			->assign('title', 'payment')
+			->assign('data', $data)
+			->render();
 	}
 
 	public function pay(){
-		return (new View('index/pay.php'))->render();
+		$data = $this->getData();
+
+		return (new View('index/pay.php'))
+			->assign('title', 'pay')
+			->assign('data', $data)
+			->render();
 	}
 
 	public function thanks(){
-		return (new View('index/thanks.php'))->render();
+		$data = $this->getData();
+
+		return (new View('index/thanks.php'))
+			->assign('title', 'thanks')
+			->assign('data', $data)
+			->render();
+	}
+
+	private function getData(){
+		return json_decode(file_get_contents('data.json'), true);
 	}
 }

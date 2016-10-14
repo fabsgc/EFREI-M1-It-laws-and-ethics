@@ -1,5 +1,6 @@
 <?php include_once('app/view/include/header.php'); ?>
-	<section class="article">
+<?php var_dump($data); ?>
+	<!--<section class="article">
 		<h2 class="title">Best T-shirt ever</h2>
 		<img src="asset/img/product.png" alt="product" class="preview">
 		<span class="price">57€</span>
@@ -81,5 +82,5 @@
 	<section class="condition hidden no-opacity">
 		<h2 class="title">General Term and Conditions of Sales</h2>
 		<a onclick="conditionBack()" class="button">Back</a>
-	</section>
+	</section>-->
 <?php include_once('app/view/include/footer.php'); ?>
