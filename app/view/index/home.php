@@ -3,42 +3,17 @@
 <div class="page">
 	<div id="items">
 		<?php foreach($data as $key => $item){ ?>
-			<h2 class="title">Best T-shirt ever</h2>
-			<img src="/<?php echo FOLDER; ?>asset/img/<?php echo $item['img']; ?>" alt="product" class="preview">
-			<span class="price"><?php echo $item['price']; ?>€</span>
-			<span class="description"><?php echo $item['description']; ?></span>
-			<a href="<?php echo \Core\Url::get('basket-add', $key); ?>">Add to my basket</a>
+			<div class="item">
+				<h2 class="title"><?php echo $item['name']; ?></h2>
+				<img src="/<?php echo FOLDER; ?>asset/img/<?php echo $item['img']; ?>" alt="product" class="preview">
+				<span class="price"><?php echo $item['price']; ?>€</span>
+				<span class="description"><?php echo $item['description']; ?></span>
+				<a href="<?php echo \Core\Url::get('basket-add', [$item['id']]); ?>" class="button">Add to my basket</a>
+			</div>
 		<?php } ?>
 	</div>
 </div>
-	<!--<section class="article">
-		<h2 class="title">Best T-shirt ever</h2>
-		<img src="asset/img/product.png" alt="product" class="preview">
-		<span class="price">57€</span>
-		<a onclick="basket()" class="button">Add to my basket</a>
-	</section>
-	<section class="basket hidden no-opacity">
-		<h2 class="title">My basket</h2>
-		<table class="table">
-			<thead>
-			<tr>
-				<th class="icon"></th>
-				<th class="description">Description</th>
-				<th class="quantity">Quantity</th>
-				<th class="price">Price</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td class="icon"><img src="asset/img/product.png" alt="product" class="preview"></td>
-				<td class="description">Best T-shirt ever</td>
-				<td class="quantity">1</td>
-				<td class="price">57€</td>
-			</tr>
-			</tbody>
-		</table>
-		<a onclick="bill()" class="button">Proceed to payment</a>
-	</section>
+	<!--
 	<section class="bill hidden no-opacity">
 		<h2 class="title">Confirmation</h2>
 		<table class="table">

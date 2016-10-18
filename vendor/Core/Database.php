@@ -30,7 +30,7 @@ class Database{
 
 	/**
 	 * singleton instance
-	 * @var \Core\Database
+	 * @var \Core\Config
 	 */
 
 	private static $instance = null;

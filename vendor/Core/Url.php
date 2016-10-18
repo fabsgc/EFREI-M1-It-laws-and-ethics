@@ -35,8 +35,8 @@ class Url{
 			foreach($urls as $url){
 				if(preg_match('#\)>#', $url)){
 					if(count($vars) > 0){
-						if(isset($var[$i])){
-							$result.= preg_replace('#\((.*)\)>#U', $var[$i], $url);
+						if(isset($vars[$i])){
+							$result.= preg_replace('#\((.*)\)>#U', $vars[$i], $url);
 						}
 						else{
 							$result.= preg_replace('#\((.*)\)>#U', '', $url);

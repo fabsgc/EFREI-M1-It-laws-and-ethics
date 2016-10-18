@@ -107,7 +107,7 @@ return [
 		],
 		'csrf' => [
 			'name' => 'token',
-			'enabled' => true
+			'enabled' => false
 		],
 		'error' => 'core/error.php',
 		'logged' => 'logged',

@@ -1,16 +1,44 @@
 {
-  "0": {
-    "id": 0,
-    "name": "Best T-shirt ever",
-    "description": "The best T-shirt you can find in this world",
-    "img":"products/product-1.png",
-    "price": 57
-  },
   "1": {
-    "1": 0,
-    "name": "Best T-shirt ever 2",
-    "description": "The best T-shirt you can find in this world 2",
+    "id": 1,
+    "name": "SAY MEOW ",
+    "description": "SAY MEOW  by Nenane",
+    "img":"products/product-1.png",
+    "price": 12
+  },
+  "2": {
+    "id": 2,
+    "name": "PANDA KEEP SLEEPING",
+    "description": "Never give up on your dreams, jeep sleeping",
     "img":"products/product-2.png",
-    "price": 57
+    "price": 15
+  },
+  "3": {
+    "id": 3,
+    "name": "EREBOR",
+    "description": "Lonely mountain brewery Erebor",
+    "img":"products/product-3.png",
+    "price": 18
+  },
+  "4": {
+    "id": 4,
+    "name": "TEA-SHIRT",
+    "description": "T-Shirt Tea-Shirt",
+    "img":"products/product-4.png",
+    "price": 18
+  },
+  "5": {
+    "id": 3,
+    "name": "NOT LAZY",
+    "description": "I'm not lazy, I'm just in energy saving mode",
+    "img":"products/product-5.png",
+    "price": 18
+  },
+  "6": {
+    "id": 3,
+    "name": "NOT LATE",
+    "description": "I'm not late, I'm just early for tomorrow",
+    "img":"products/product-6.png",
+    "price": 18
   }
 }
