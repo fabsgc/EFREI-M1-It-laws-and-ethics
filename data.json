@@ -1,11 +1,13 @@
 {
   "0": {
+    "id": 0,
     "name": "Best T-shirt ever",
     "description": "The best T-shirt you can find in this world",
     "img":"products/product-1.png",
     "price": 57
   },
   "1": {
+    "1": 0,
     "name": "Best T-shirt ever 2",
     "description": "The best T-shirt you can find in this world 2",
     "img":"products/product-2.png",

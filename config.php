@@ -94,7 +94,7 @@ return [
 			'url' => '/payment/thanks(/*)',
 			'action' => 'payment.thanks',
 			'vars' => [],
-			'method' => 'post',
+			'method' => 'get',
 			'logged' => '*',
 			'access' => '*'
 		]

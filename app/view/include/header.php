@@ -4,7 +4,7 @@
 <!Doctype html>
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<title>E-Shop - <?php echo htmlspecialchars($title); ?></title>
+	<title>E-Shop for lawyer - <?php echo htmlspecialchars($title); ?></title>
 	<link rel="stylesheet" href="/<?php echo FOLDER; ?>asset/file/font-awesome-4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/<?php echo FOLDER; ?>asset/css/default.css">
 	<script src="/<?php echo FOLDER; ?>asset/js/jquery-3.1.1.min.js"></script>
@@ -30,7 +30,7 @@
 				<a href="<?php echo \Core\Url::get('index-home'); ?>/">
 					<h1>
 						<i class="fa fa-car"></i>
-						E-Shop
+						E-Shop for lawyer
 					</h1>
 				</a>
 			</div>

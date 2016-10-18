@@ -1,5 +1,16 @@
+<?php /** @var $data[] */ ?>
 <?php include_once('app/view/include/header.php'); ?>
-<?php var_dump($data); ?>
+<div class="page">
+	<div id="items">
+		<?php foreach($data as $key => $item){ ?>
+			<h2 class="title">Best T-shirt ever</h2>
+			<img src="/<?php echo FOLDER; ?>asset/img/<?php echo $item['img']; ?>" alt="product" class="preview">
+			<span class="price"><?php echo $item['price']; ?>€</span>
+			<span class="description"><?php echo $item['description']; ?></span>
+			<a href="<?php echo \Core\Url::get('basket-add', $key); ?>">Add to my basket</a>
+		<?php } ?>
+	</div>
+</div>
 	<!--<section class="article">
 		<h2 class="title">Best T-shirt ever</h2>
 		<img src="asset/img/product.png" alt="product" class="preview">

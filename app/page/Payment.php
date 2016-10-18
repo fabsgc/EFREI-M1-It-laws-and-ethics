@@ -7,7 +7,7 @@ class Payment extends Page{
 	public function home(){
 		$data = $this->getData();
 
-		return (new View('index/home.php'))
+		return (new View('payment/home.php'))
 			->assign('title', 'payment')
 			->assign('data', $data)
 			->render();
@@ -16,7 +16,7 @@ class Payment extends Page{
 	public function pay(){
 		$data = $this->getData();
 
-		return (new View('index/pay.php'))
+		return (new View('payment/pay.php'))
 			->assign('title', 'pay')
 			->assign('data', $data)
 			->render();
@@ -25,7 +25,7 @@ class Payment extends Page{
 	public function thanks(){
 		$data = $this->getData();
 
-		return (new View('index/thanks.php'))
+		return (new View('payment/thanks.php'))
 			->assign('title', 'thanks')
 			->assign('data', $data)
 			->render();
