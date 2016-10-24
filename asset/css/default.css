@@ -156,36 +156,6 @@ header .right a span{
 	line-height: 28px;
 }
 
-header .right div.search input{
-	height: 40px;
-	line-height: 40px;
-	margin-top: 25px;
-	border: none;
-	padding: 0 10px;
-	width: 230px;
-	position: relative;
-	top: -5px;
-	outline: none;
-}
-
-header .right div.search i{
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
-	background-color: #f06060;
-	line-height: 40px;
-	text-align: center;
-	transition-duration:0.15s;
-	position: relative;
-	top: -5px;
-	left: -4px;
-	display: inline-block;
-}
-
-header .right div.search i:hover{
-	background-color: #D24848;
-}
-
 #main{
 	min-height: 360px;
 }
@@ -403,6 +373,10 @@ h1.standalone-title{
     margin-bottom: 15px;
 }
 
+.page label#checkbox-cgu{
+	width: 450px;
+}
+
 .page input[type="email"],
 .page input[type="text"],
 .page input[type="password"]{
@@ -416,10 +390,24 @@ h1.standalone-title{
     outline: none;
 }
 
+.page textarea{
+	width:448px;
+}
+
+.page select{
+	display: inline-block;
+	width: 300px;
+	border: 1px solid rgb(180,180,180);
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	outline: none;
+}
+
 .page input[type="submit"]{
     width: 150px;
-    display: block;
-    margin: 20px auto auto auto;
+    margin: 20px 0;
     background-color: #ed525a;
     border-bottom: 3px solid #D3464D;
     color: white;
@@ -469,13 +457,13 @@ h1.standalone-title{
     width: 150px;
     display: inline-block;
     text-align: center;
-    line-height: 43px;
+    line-height: 37px;
     text-decoration: none;
     background-color: #ed525a;
     border-bottom: 3px solid #D3464D;
     color: white;
     cursor: pointer;
-    height:45px;
+    height:40px;
     transition-duration:0.15s;
 }
 
@@ -594,4 +582,18 @@ table.table td.icon img {
 
 .page a{
 	color: #f06060;
+}
+
+ul.resume strong{
+	font-weight: 900;
+}
+
+h3.policy{
+	font-size: 25px;
+	margin: 16px 0
+}
+
+h4.policy{
+	font-size: 20px;
+	margin: 16px 0;
 }

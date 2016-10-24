@@ -74,9 +74,9 @@ return [
 			'logged' => '*',
 			'access' => '*'
 		],
-		'payment-home' => [
-			'url' => '/payment(/*)',
-			'action' => 'payment.home',
+		'payment-address' => [
+			'url' => '/payment/address(/*)',
+			'action' => 'payment.address',
 			'vars' => [],
 			'method' => 'get',
 			'logged' => '*',
@@ -86,7 +86,15 @@ return [
 			'url' => '/payment/pay(/*)',
 			'action' => 'payment.pay',
 			'vars' => [],
-			'method' => 'get',
+			'method' => 'post',
+			'logged' => '*',
+			'access' => '*'
+		],
+		'payment-confirm' => [
+			'url' => '/payment/confirm(/*)',
+			'action' => 'payment.confirm',
+			'vars' => [],
+			'method' => 'post',
 			'logged' => '*',
 			'access' => '*'
 		],
@@ -94,7 +102,7 @@ return [
 			'url' => '/payment/thanks(/*)',
 			'action' => 'payment.thanks',
 			'vars' => [],
-			'method' => 'get',
+			'method' => 'post',
 			'logged' => '*',
 			'access' => '*'
 		]

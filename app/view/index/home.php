@@ -14,43 +14,6 @@
 	</div>
 </div>
 	<!--
-	<section class="bill hidden no-opacity">
-		<h2 class="title">Confirmation</h2>
-		<table class="table">
-			<thead>
-			<tr>
-				<th class="icon"></th>
-				<th class="description">Description</th>
-				<th class="quantity">Quantity</th>
-				<th class="price">Price</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td class="icon"><img src="asset/img/product.png" alt="product" class="preview"></td>
-				<td class="description">Best T-shirt ever</td>
-				<td class="quantity">1</td>
-				<td class="price">57€</td>
-			</tr>
-			<tr>
-				<td class="description" colspan="3">Shipping</td>
-				<td class="quantity">100€</td>
-			</tr>
-			<tr>
-				<td class="description" colspan="3">Total</td>
-				<td class="quantity">157€</td>
-			</tr>
-			</tbody>
-		</table>
-		<form action="">
-			<input type="checkbox" id="checkbox-cgu">
-			<label>
-				I confirm that I accept the
-				<a onclick="condition()">General Terms and Conditions of Sales</a>
-			</label>
-		</form>
-		<a onclick="pay()" class="button">Confirm and pay</a>
-	</section>
 	<section class="pay hidden no-opacity">
 		<h2 class="title">Payment</h2>
 		<form>

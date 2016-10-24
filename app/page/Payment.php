@@ -4,11 +4,11 @@ use \Core\Page;
 use \Core\View;
 
 class Payment extends Page{
-	public function home(){
+	public function address(){
 		$data = $this->getData();
 
-		return (new View('payment/home.php'))
-			->assign('title', 'payment')
+		return (new View('payment/address.php'))
+			->assign('title', 'information')
 			->assign('data', $data)
 			->render();
 	}
@@ -22,8 +22,21 @@ class Payment extends Page{
 			->render();
 	}
 
+	public function confirm(){
+		$data = $this->getData();
+
+		$_SESSION['bank'] = $_POST;
+
+		return (new View('payment/confirm.php'))
+			->assign('title', 'confirm')
+			->assign('data', $data)
+			->render();
+	}
+
 	public function thanks(){
 		$data = $this->getData();
+
+		$_SESSION = array();
 
 		return (new View('payment/thanks.php'))
 			->assign('title', 'thanks')
