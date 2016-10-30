@@ -5,27 +5,27 @@
 	<form action="<?php echo \Core\Url::get('payment-pay'); ?>" method="post">
 		<label for="title">Title : </label>
 		<select name="title" id="title">
-			<option value="Mr">Mr</option>
+			<option value="Mr" selected="selected">Mr</option>
 			<option value="Ms">Ms</option>
 		</select>
 		<br>
 		<label for="email">Email : </label>
-		<input type="text" name="email" id="email">
+		<input type="text" name="email" id="email" value="<?= $_SESSION['information']['email'] ?>">
 		<br>
 		<label for="name">Name : </label>
-		<input type="text" name="name" id="name">
+		<input type="text" name="name" id="name" value="<?= $_SESSION['information']['name'] ?>">
 		<br>
 		<label for="firstname">Firstname : </label>
-		<input type="text" name="firstname" id="firstname">
+		<input type="text" name="firstname" id="firstname" value="<?= $_SESSION['information']['firstname'] ?>">
 		<br>
 		<label for="street">Address : </label>
-		<input type="text" name="street" id="street">
+		<input type="text" name="street" id="street" value="<?= $_SESSION['information']['street'] ?>">
 		<br>
 		<label for="city">City : </label>
-		<input type="text" name="city" id="city">
+		<input type="text" name="city" id="city" value="<?= $_SESSION['information']['city'] ?>">
 		<br>
 		<label for="zip">Zip code : </label>
-		<input type="text" name="zip" id="zip">
+		<input type="text" name="zip" id="zip" value="<?= $_SESSION['information']['zip'] ?>">
 		<br>
 		<label for="country">Country : </label>
 		<select name="country" id="country">

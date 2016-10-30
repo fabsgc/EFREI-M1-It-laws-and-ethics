@@ -28,14 +28,14 @@
     "price": 18
   },
   "5": {
-    "id": 3,
+    "id": 5,
     "name": "NOT LAZY",
     "description": "I'm not lazy, I'm just in energy saving mode",
     "img":"products/product-5.png",
     "price": 18
   },
   "6": {
-    "id": 3,
+    "id": 6,
     "name": "NOT LATE",
     "description": "I'm not late, I'm just early for tomorrow",
     "img":"products/product-6.png",
